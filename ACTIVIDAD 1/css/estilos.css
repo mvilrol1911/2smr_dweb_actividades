@@ -1,0 +1,31 @@
+body {
+    background-color: lightgray;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 300%;
+}
+
+p {
+    /*margen izq y derecha un 10% arriba*/
+    margin: 0 10%;
+    text-indent: 50px;
+}
+
+.imagenIzq {
+    /* margen a la derecha y debajo de 10px */
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 106px;
+    height: 150px;
+}
+
+h2 {
+    background-color: grey;
+    color: white;
+    padding: 3px 5px;
+}
