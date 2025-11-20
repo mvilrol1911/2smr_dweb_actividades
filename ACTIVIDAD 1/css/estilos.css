@@ -29,3 +29,12 @@ h2 {
     color: white;
     padding: 3px 5px;
 }
+
+em {
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
+strong {
+    background-color: white;
+}
