@@ -1,0 +1,97 @@
+
+header {
+    background-color: bisque;
+    box-shadow: 0 2px 4px rgb(65, 59, 59);
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 2px solid saddlebrown;
+}
+
+section h2 {
+    color: saddlebrown;
+    margin-bottom: 0.5rem;
+    border-color: aquamarine;
+    ;
+}
+
+h1 {
+    color: peru;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+body {
+    background-color: navajowhite;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+h2:not(.introduccion) {
+    text-align: center;
+    background-color: bisque;
+    box-shadow: 0 2px 4px rgb(65, 59, 59);
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid saddlebrown;
+    color: peru;
+    font-family:'Courier New', Courier, monospace;
+}
+
+p {
+    text-align: center;
+}
+
+.introduccion {
+    text-align: center;
+    color: peru;
+}
+
+.caja {
+  width: 150px;
+  overflow-wrap: break-word;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 870px;
+}
+
+.btn {
+    border: 2px solid peru;
+    border-radius: 4px;
+    background-color: white;
+    padding: 0.4rem 0.8rem;
+    margin: 0.3rem 0.3rem 0.6rem 0;
+    color: peru;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover, .btn-sec:hover {
+    background-color: peru;
+    transition: background-color 0.5s;
+    color: white;
+}
+
+.btn:activo, .btn-sec:active {
+    background-color: bisque;
+}
+
+section {
+    background-color: bisque;
+    border: 2px solid navajowhite;
+    border-radius: 2rem;
+    margin: 50px 600px 40px 600px;
+    padding-top: 20px;
+    border-top: 3px solid peru;
+    border-bottom: 3px solid peru;
+}
+
+.botones {
+    margin: 0px 628px 0px 628px;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 34px;
+}

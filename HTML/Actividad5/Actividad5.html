@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5 - Formularios</title>
+    <style>
+/*      selector {
+            propiedad: valor;
+        }
+*/
+        h1{
+            color: turquoise;
+        }
+        h1{
+            border-style: solid;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .obligatorio {
+            color: white;
+            font-weight: bold;
+        }
+        #username {
+            background-color: rgb(123, 235, 235);
+            border: 0;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+        li {
+            background: white;
+            margin-bottom: 5px;
+            float: left;
+        }
+        main {
+            clear: both;
+        }
+    </style>
+</head>
+<body style="background-color: pink;">
+    <header>
+        <h1>Actividad 5 - Formularios en HTML</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Controles de formulario</h2>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="username" class="obligatorio">Nombre:</label>
+                    <input type="text" name="username" id="username" autofocus required/>
+                    <br>
+                    <br>
+                    <label for="email" class="obligatorio">Correo Electrónico:</label>
+                    <input type="email" name="email" id="email" autofocus required/>
+                    <br>
+                    <br>
+                    <label for="url">URL:</label>
+                    <input type="url" name="url" id="url" autofocus required>
+                    <br>
+                    <br>
+                    <label for="ciudadlista">Ciudad:</label>
+                    <input list="ciudad" id="ciudadlista">
+                    <datalist id="ciudad">
+                        <option value="CÓRDOBA"></option>
+                        <option value="SEVILLA"></option>
+                    </datalist>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Otros datos</legend>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" name="fecha" id="fecha">
+                    <br>
+                    <br>
+                    <label for="hora">Tiempo:</label>
+                    <input type="time" name="hora" id="hora">
+                    <br>
+                    <br>
+                    <label for="fecha">Mes:</label>
+                    <input type="month" name="mes" id="mes">
+                    <br>
+                    <br>
+                    <label for="fecha">Semana:</label>
+                    <input type="week" name="semana" id="semana">
+                    <br>
+                    <br>
+                    <label for="minmax">Min - 10 - Max 10:</label>
+                    <input type="number" min="1" max="10" name="minmax" id="minmax">
+                    <br>
+                    <br>
+                    <label for="color">Color:</label>
+                    <input type="color" name="color" id="color">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Otros controloes</legend>
+                    <label for="aficiones">Aficiones:</label>
+                    <input type="checkbox" name="cine" id="cine" checked><label for="aficiones">Cine</label>
+                    <input type="checkbox" name="deporte" id="deporte"><label for="aficiones">Deporte</label>
+                    <br>
+                    <br>
+                    <label for="pago">Forma de pago:</label>
+                    <input type="radio" name="visa" id="visa"><label for="pago">Visa</label>
+                    <input type="radio" name="american" id="american" checked><label for="pago">American Express</label>
+                    <input type="radio" name="mastercard" id="mastercard"><label for="pago">Mastercard</label>
+
+                </fieldset>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <small>Copyright &copy; - Nombre Apellidos</small>
+    </footer>
+</body>
+</html>

@@ -9,6 +9,7 @@
     --color-fondo_caja: rgb(234, 246, 251);
     --color-borde-caja: #006699;
     --secondary-color: #f0fff0;
+    --color-borde-redondeado: #333333;
 }
 
 body {
@@ -140,4 +141,47 @@ margen inferior 0.3rem */
     background-color: var(--secondary-color);
     border-left: 4px solid green;
     padding-left: 0.4rem;
+}
+
+
+.box {
+    float: left;
+    width: 100px;
+    height: 80px;
+    border: 3px solid var(--color-borde-redondeado);
+    text-align: center;
+    line-height: 80px;
+    font-weight: hold;
+    margin-left: 20px;
+}
+
+.b1 {
+    background-color: #ff9999;
+    border-radius: 16px 0 0 0 ;
+}
+
+.b2 {
+    background-color: #ffcc66;
+    border-radius: 0 16px 0 0;
+}
+
+.b3 {
+    background-color: #99cc99;
+    border-radius: 16px;
+}
+
+.fila::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: #eee;
+    padding: 1rem;
+    border-top: 3px solid var(--primary-color);
+    border-radius: 8px 8px 0 0;
 }
