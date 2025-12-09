@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+/* Estilo autowide para el h1 */
+
+
+/* /Variables colores CSS/ */
+:root {
+    --color-fondo: #f3fdbc;
+    --color-nav: rgb(240, 173, 173);
+    --color-click: white;
+    --color-letra-click: red;
+    --color-fondo-menu-nav: rgb(255 251 218);
+    --color-destacado-borde: rgb(245 201 19);
+    --color-fondo-header: rgb(240, 183, 183);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+    color: #0000FF;
+    text-align: center;
+    font-family: 'audiowide';
+}
+
+body {
+    background-color: var(--color-fondo);
+    margin: 0 auto;
+    box-sizing: border-box; /
+    /* Para que el padding y border no afecten al ancho total */
+}
+
+#destacado {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px dashed orange;
+    padding: 10px;
+    background-color: var(--color-fondo-menu-nav);
+    margin: 10px;
+}
+
+nav {
+    background-color: var(--color-nav);
+    padding: 3px;
+}
+
+nav a {
+    padding: 0 0 0 15px;
+    /* /Espaciado dentro del enlace/ */
+    margin: 0px;
+    text-decoration: none;
+    /* /Quitar subrayado/ */
+    cursor: pointer;
+    /* /Cambiar el cursor al pasar por encima/ */
+
+}
+
+header nav li {
+    list-style: none;
+    padding-left: 3px;
+
+}
+
+header nav ul {
+    padding: 1px 1px 0px 3px;
+    display: flex;
+    /* /Para que los elementos estén en línea/ */
+}
+
+header nav ::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header nav a:hover {
+    color: var(--color-letra-click);
+    padding: 20px;
+    }
+
+header nav {
+    background-color: var(--color-fondo-header);
+    margin: 10px;
+}
+
+header nav ul {
+    padding-left: 0px;
+}
+
+header nav li {
+    list-style-type: none;
+    float: left;
+    margin: 0px;
+    padding: 16px 20px 16px 20px;
+}
+
+header nav li:hover {
+    background-color: whitesmoke;
+}
+
+
+
+.caja p:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.caja p:nth-of-type(2) {
+    clear: both; /*fuerza a empezar debajo del flotador anterior */
+    padding: 5px;
+}
+
+.centrado {
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.caja {
+    border: solid 2px blue;
+    display: inline-block;
+    margin: 15px;
+    vertical-align: middle;
+    color: green;
+}
+
+.caja img {
+    width: 100px;
+}
+
+.caja p:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.izquierda {
+    float: left;
+}
+
+/* nth-of-type(2) es la segunda linea del parrafo */
+.caja p:nth-of-type(2)  {
+    clear: both;
+}
+
+.derecha {
+    float: right;
+}
+
+footer p:last-child  {
+    font-style: italic;
+    color: grey;
+}
+
+aside {
+    float: right;
+}
